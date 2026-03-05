@@ -71,7 +71,9 @@ executable tictactoe
     -- other-extensions:
 
     -- Other library packages from which modules are imported.
-    build-depends:    base ^>=4.17.2.1
+    build-depends:
+        threepenny-gui ^>= 0.9.4.2,
+        base ^>= 4.17.2.1
 
     -- Directories containing source files.
     hs-source-dirs:   exe
