@@ -1,3 +1,5 @@
 import Fudgets
+import AllFudgets
 
-main = fudlogue (shellF "Hewwo" (labelF "Hewwo, world~"))
+main :: IO()
+main = fudlogue (shellF "Hewwo" (labelF "Hewwo, world~" >+< quitButtonF))
