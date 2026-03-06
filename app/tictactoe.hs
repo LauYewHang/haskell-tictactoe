@@ -13,5 +13,17 @@ calMark x y
     | x == X = -1 + y
     | otherwise = y
 
+-- the Playboard type
+-- used to represent the 3x3 playboard filled with Symbol
+-- (a 2D array / matrix)
+type Playboard = [[Symbol]]
+
+-- playboard value
+playboard :: Playboard
+-- generate matrix by list comprehension
+-- for i in [0..2], you generate a row
+-- to generate each row, it is for j in [0..2] to generate each column, and that each column is Empty Symbol
+playboard = [[Empty | column <- [0..2]] | row <- [0..2]]
+
 main = do
-    print (calMark X 10)
+    print (playboard)
