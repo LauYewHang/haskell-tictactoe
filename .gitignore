@@ -1,1 +1,8 @@
+# funni cabal thingy hehe
 dist-newstyle/
+
+# ignore the app (executable file)
+# ignore *.hi & *.o generated when compiling the code
+app/app
+app/*.hi
+app/*.o
